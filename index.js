@@ -38,7 +38,7 @@ app.post("/user", (req, res) => {
     }
 
     const NewList = {
-        id: id || Math.floor(Math.random() * 100000),
+        id: Date.now(),
         name,
         gender,
         age
